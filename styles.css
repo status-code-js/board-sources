@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;              /* теперь видно все квадратики */
+  max-width: 800px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  background: #1d1d1d;
+  margin: 10px;                    /* отступ между квадратиками */
+  box-shadow: 0 0 2px #000;
+  transition: 0s ease;            /* анимация в 2 секунды */
+}
+
+.square:hover {                   /* добавляем псевдоселектор */
+    transition-duration: 0.1s;       /* цвет мы добавляем, но он пока не убирается */
+}
